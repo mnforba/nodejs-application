@@ -11,7 +11,7 @@
     "start1": "nodemon app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tslint --project tsconfig.json",
+    "lint": "eslint . --ext js,jsx,ts,tsx --fix",
      "sonar": "node sonar-project.js"
   },
   "dependencies": {
@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
-    "tslint": "^5.12.0",
     "sonarqube-scanner": "^2.7.0"
   },
   "engines": {
