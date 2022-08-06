@@ -11,7 +11,8 @@
     "start1": "nodemon app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext js,jsx,ts,tsx --fix",
+    "lint": "eslint .  --ext .js",
+     "lint-fix": "eslint --fix .  --ext .js",
      "sonar": "node sonar-project.js"
   },
   "dependencies": {
