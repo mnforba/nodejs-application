@@ -12,7 +12,7 @@ node
         sh 'npm install'
     }
  }  
- 
+ /*
   stage('ExecuteSonarQubeReport') {
      nodejs(nodeJSInstallationName: 'nodejs15.2.1') {
         sh 'npm run sonar'
@@ -34,5 +34,5 @@ node
         sh 'npm start &'
     }
 }    
-    
+ */   
 }
