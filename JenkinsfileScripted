@@ -12,6 +12,13 @@ node
         sh 'npm install'
 	}
  }
+ stage("Test")
+ {
+ nodejs(nodeJSInstallationName: 'nodejs15.2.1') {
+        
+        sh 'CI=true npm run test'
+	}
+ }
  /*
  stage("LintTest")
  {
