@@ -10,11 +10,13 @@ node
  {
  nodejs(nodeJSInstallationName: 'nodejs15.2.1') {
         sh 'npm install'
-	sh 'npm run lint'
-	sh 'npm run prettier'
-	sh 'CI=true npm run test'
-	sh 'npm build'
-    }
+	}
+ }
+ stage("LintTest")
+ {
+ nodejs(nodeJSInstallationName: 'nodejs15.2.1') {
+        sh 'npm run lint'
+	}
  }  
  /*
   stage('ExecuteSonarQubeReport') {
